@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Test Page</title>
+    <script src="/pixel.js"></script>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pixel Tracking Test</h1>
+        <p>This page loads the pixel script which tracks pageviews and clicks.</p>
+
+        <button id="btn-buy" onclick="window.gravity.track('purchase', { value: 20 })">Buy Item ($20)</button>
+        <button id="btn-signup">Sign Up</button>
+        <button id="btn-more">Learn More</button>
+
+        <div style="margin-top: 50px;">
+            <a href="/page2.html">Go to Product Page (Page 2)</a>
+        </div>
+    </div>
+</body>
+
+</html>
