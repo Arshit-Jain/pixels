@@ -1,6 +1,6 @@
 (function (window) {
     const CONFIG = {
-        endpoint: 'http://localhost:3000/api/events',
+        endpoint: process.env.API_ENDPOINT + '/api/events' || 'http://localhost:3000/api/events',
         batchInterval: 2000, // 2 seconds
     };
 
